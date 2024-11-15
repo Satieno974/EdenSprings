@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chaplaincy Training Program Registration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+    }
+    .form-container {
+        width: 100%;
+        max-width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .form-check {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Chaplaincy Training Program Registration</h2>
+    <form action="forms/form.php" method="post">
+        <div class="form-group">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="other_names">Other Names:</label>
+            <input type="text" id="other_names" name="other_names" required>
+        </div>
+        <div class="form-group">
+            <label for="chaplaincy_level">Select Chaplaincy Training Level:</label>
+            <select id="chaplaincy_level" name="chaplaincy_level" required>
+                <option value="" disabled selected>Select a level</option>
+                <option value="Level 1">Chaplaincy Level 1</option>
+                <option value="Level 2">Chaplaincy Level 2</option>
+                <option value="Basic Counseling">Basic Counseling Training</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Are you a church member at Eden Spring SDA church?</label>
+            <div class="form-check">
+                <input type="radio" id="member_yes" name="member" value="Yes" required>
+                <label for="member_yes">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="member_no" name="member" value="No" required>
+                <label for="member_no">No</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="membership_church">If No, which church is your membership at?</label>
+            <input type="text" id="membership_church" name="membership_church">
+        </div>
+        <div class="form-group">
+            <label>Are you already baptized?</label>
+            <div class="form-check">
+                <input type="radio" id="baptized_yes" name="baptized" value="Yes" required>
+                <label for="baptized_yes">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="baptized_no" name="baptized" value="No" required>
+                <label for="baptized_no">No</label>
+            </div>
+        </div>
+        <button type="submit" name="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
