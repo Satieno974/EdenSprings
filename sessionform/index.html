@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Coaching Log</title>
+</head>
+<body>
+    <h2>Session Coaching Log</h2>
+    <form action="process_coaching_log.php" method="POST">
+        <label for="client_name">Client Full Name:</label>
+        <input type="text" id="client_name" name="client_name" required><br><br>
+
+        <label for="session_number">Session #:</label>
+        <input type="number" id="session_number" name="session_number" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="agenda">Agenda for the Day:</label><br>
+        <textarea id="agenda" name="agenda" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="start_time">Time Log (Start):</label>
+        <input type="time" id="start_time" name="start_time" required><br><br>
+
+        <label for="end_time">Time Log (End):</label>
+        <input type="time" id="end_time" name="end_time" required><br><br>
+
+        <label for="session_duration">Session Duration (in Minutes):</label>
+        <input type="number" id="session_duration" name="session_duration" required><br><br>
+
+        <label for="commitments">Client's Commitment(s) for the day:</label><br>
+        <textarea id="commitments" name="commitments" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="feedback">Client's Feedback/ Key Lessons Learnt Today:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="coach_overview">Coach's Overview of the Session:</label><br>
+        <textarea id="coach_overview" name="coach_overview" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="next_appointment">Next Appointment Date:</label>
+        <input type="date" id="next_appointment" name="next_appointment" required><br><br>
+
+        <label for="next_time">Next Appointment Time:</label>
+        <input type="time" id="next_time" name="next_time" required><br><br>
+
+        <label for="coach_signature">Coach's Signature:</label>
+        <input type="text" id="coach_signature" name="coach_signature" required><br><br>
+
+        <label for="client_signature">Client's Signature:</label>
+        <input type="text" id="client_signature" name="client_signature" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
